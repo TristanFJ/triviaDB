@@ -1,8 +1,4 @@
 import {
-  ValuesController
-} from "./Controllers/ValuesController.js";
-
-import {
   QuestionsController
 } from "./Controllers/QuestionsController.js";
 
