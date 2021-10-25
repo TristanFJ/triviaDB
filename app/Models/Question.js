@@ -8,12 +8,11 @@ export class Question {
     this.answer = data.answer
   }
 
-  get CardTemplate() {
+  get Template() {
     return /*html*/ `
       <div class="card m-2 shadow">
         <div class="card-body">
-          <h4 class="text-uppercase no-select">${this.question}
-          </h4>
+          <h4 class="text-uppercase no-select">${this.question}</h4>
         </div>
       </div>
     `
