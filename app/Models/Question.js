@@ -12,9 +12,6 @@ export class Question {
     this.wrong = data.incorrect_answers
   }
 
-
-
-
   get Template() {
     return /*html*/ `
       <div class="card m-2 shadow">
@@ -23,7 +20,7 @@ export class Question {
           </div>
           </div>
 
-                <button class="btn btn-primary" onclick="location.reload()">New Question</button>
+          <button class="btn btn-primary" onclick="location.reload()">New Question</button>
 
     `
   }
