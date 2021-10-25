@@ -14,19 +14,16 @@ function _draw() {
 
 
 export class QuestionsController {
-
-
   constructor() {
-    console.log('QuestionsController connected');
-    this.getQuestions()
-
+    // console.log('QuestionsController connected');
     ProxyState.on('questions', _draw)
+    this.getQuestions()
   }
 
-  async getQuestions(url) {
+  async getQuestions() {
     try {
-      await questionsService.getQuestions(url)
-      console.log('get questions complete');
+      await questionsService.getQuestions()
+      console.log('retrieved question successfully');
     } catch (error) {
       console.log(error);
     }

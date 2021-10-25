@@ -10,13 +10,12 @@ import {
 
 class QuestionsService {
   constructor() {
-    console.log('QuestionsService connected');
+    // console.log('QuestionsService connected');
   }
 
-  async getQuestions(url) {
-    console.log('getting questions');
-    const response = await api.get(url)
-    console.log('api response: ', response.data);
+  async getQuestions() {
+    console.log('getting question');
+    const response = await api.get()
     ProxyState.questions = response.data.results.map(q => new Question(q))
   }
 }
